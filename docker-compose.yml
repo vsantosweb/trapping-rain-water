@@ -1,0 +1,8 @@
+services:
+  app-vsantos:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: app-vsantos
+    volumes:
+      - ./app:/var/www/html
