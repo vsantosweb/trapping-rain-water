@@ -33,15 +33,20 @@ docker exec -it app-vsantos vendor/bin/phpunit
 ## 📂 Estrutura do Projeto
 
 ```
-├── docker-compose.yml
-├── Dockerfile
-├── src/
-│   ├── TrapingRainWater.php
-│   ├── case.txt
-│   ├── tests/
-│   │   ├── TrapingRainWaterTest.php
-├── exec.php
 ├── README.md
+├── app
+│   ├── Dockerfile
+│   ├── composer.json
+│   ├── composer.lock
+│   ├── exec.php
+│   ├── phpunit.xml
+│   ├── src
+│   │   ├── TrapingRainWater.php
+│   │   ├── case.txt
+│   │   ├── poc.php
+│   │   └── tests
+│   │       └── TrapingRainWaterTest.php
+
 ```
 
 ---
