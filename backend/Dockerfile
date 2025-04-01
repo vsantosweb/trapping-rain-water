@@ -12,8 +12,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 WORKDIR /var/www/html
 
 RUN cd /var/www/html
-# Install composer
 
+# Install composer
 RUN composer install
 
-CMD ["php", "-S", "0.0.0.0:8000"]
+COPY .env.example .env
+RUN php artisan key:generate
+
+CMD ["php", "artisan", "serve", "--host=0.0.0.0"]

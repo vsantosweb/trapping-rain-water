@@ -1,8 +1,10 @@
 services:
-  app-vsantos:
+  backend-vsantos:
     build:
-      context: ./app
+      context: ./backend
       dockerfile: Dockerfile
-    container_name: app-vsantos
+    container_name: backend-vsantos
+    ports:
+      - 8000:8000
     volumes:
-      - ./app:/var/www/html
+      - ./backend:/var/www/html

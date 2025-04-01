@@ -1,7 +1,0 @@
-<phpunit bootstrap="vendor/autoload.php">
-    <testsuites>
-        <testsuite name="Traping Rain Water Test">
-            <directory>tests</directory>
-        </testsuite>
-    </testsuites>
-</phpunit>
