@@ -38,7 +38,7 @@ class TrappingRainWaterController extends Controller
                 'success' => true,
                 'message' => $e->getMessage(),
                 'data' => null,
-            ], 200);
+            ], 400);
         }
     }
 
@@ -66,7 +66,7 @@ class TrappingRainWaterController extends Controller
                 'success' => true,
                 'message' => $e->getMessage(),
                 'data' => null,
-            ], 200);
+            ], 400);
         }
         
     }
